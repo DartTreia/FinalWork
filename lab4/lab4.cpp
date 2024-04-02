@@ -2,26 +2,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
-	int A[20];
+	int AL[20];
 	int B[10][10];
 	//Задание А
 	printf("Task A:\n\n");
 
 	printf("All elements: ");
 	for (int i = 0; i < 20; i++) {
-		A[i] = -50+rand()%100;
-		printf("%d  ", A[i]);
+		AL[i] = -50+rand()%100;
+		printf("%d  ", AL[i]);
 	}
 	printf("\n\nPositive elements: ");
 	for (int i = 0; i < 20; i++) {
-		if(A[i]>0)
-		printf("%d  ", A[i]);
+		if(AL[i]>0)
+		printf("%d  ", AL[i]);
 	}
 
 	printf("\n\nNegative elements: ");
 	for (int i = 0; i < 20; i++) {
-		if (A[i] < 0)
-			printf("%d  ", A[i]);
+		if (AL[i] < 0)
+			printf("%d  ", AL[i]);
 	}
 
 	//Задание Б
