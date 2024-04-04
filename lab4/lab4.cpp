@@ -48,7 +48,7 @@ int main() {
 		printf("Middle value of %d column: %.1f\n", (i + 1), srzn);
 	}
 	//Доп задание
-	int sumDop = 0; //перменная для хранения результата.
+	int sumDop = 0; //перменная для хранения результата!
 
 	for (int i = 0; i < 10; i++) {
 		for (int j = i; j < 10; j++) {
