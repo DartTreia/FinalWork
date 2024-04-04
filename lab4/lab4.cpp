@@ -2,8 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
+
 	int AL[20];
+
 	int B[10][10];
+
 	//Задание А
 	printf("Task A:\n\n");
 
@@ -45,7 +48,8 @@ int main() {
 		printf("Middle value of %d column: %.1f\n", (i + 1), srzn);
 	}
 	//Доп задание
-	int sumDop = 0;
+	int sumDop = 0; //перменная для хранения результата.
+
 	for (int i = 0; i < 10; i++) {
 		for (int j = i; j < 10; j++) {
 				sumDop += B[i][j];
