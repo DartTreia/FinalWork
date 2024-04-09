@@ -11,27 +11,27 @@ int main() {
 	printf("Task A:\n\n");
 
 	printf("All elements: ");
-	for (int i = 0; i < 20; i++) {
-		AL[i] = -50+rand()%100;
-		printf("%d  ", AL[i]);
+	for (int i1 = 0; i1 < 20; i1++) {
+		AL[i1] = -50+rand()%100;
+		printf("%d  ", AL[i1]);
 	}
 	printf("\n\nPositive elements: ");
-	for (int i = 0; i < 20; i++) {
-		if(AL[i]>0)
-		printf("%d  ", AL[i]);
+	for (int i1 = 0; i1 < 20; i1++) {
+		if(AL[i1]>0)
+		printf("%d  ", AL[i1]);
 	}
 
 	printf("\n\nNegative elements: ");
-	for (int i = 0; i < 20; i++) {
-		if (AL[i] < 0)
-			printf("%d  ", AL[i]);
+	for (int i1 = 0; i1 < 20; i1++) {
+		if (AL[i1] < 0)
+			printf("%d  ", AL[i1]);
 	}
 
 	//Задание Б
 	printf("\n\nTask B:\n\n");
 
 	printf("All elements:\n");
-	for (int i = 0; i < 10; i++) {
+	for (int i1 = 0; i1 < 10; i1++) {
 		for (int j = 0; j < 10; j++) {
 			B[i][j] = -50 + rand() % 100;
 			printf("%d ", B[i][j]);
@@ -39,20 +39,20 @@ int main() {
 		printf("\n");
 	}
 	printf("\n");
-	for (int i = 0; i < 10; i++) {
+	for (int i1 = 0; i1 < 10; i1++) {
 		float srzn = 0.0;
 		for (int j = 0; j < 10; j++) {
-			srzn+=(float)B[j][i];
+			srzn+=(float)B[j][i1];
 		}
 		srzn /= 10.0;
-		printf("Middle value of %d column: %.1f\n", (i + 1), srzn);
+		printf("Middle value of %d column: %.1f\n", (i1 + 1), srzn);
 	}
 	//Доп задание
 	int sumDop = 0; //перменная для хранения результата!
 
-	for (int i = 0; i < 10; i++) {
+	for (int i1 = 0; i1 < 10; i1++) {
 		for (int j = i; j < 10; j++) {
-				sumDop += B[i][j];
+				sumDop += B[i1][j];
 			
 		}
 	}
