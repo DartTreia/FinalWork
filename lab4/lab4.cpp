@@ -11,28 +11,32 @@ int main() {
 	printf("Task A:\n\n");
 
 	printf("All elements: ");
-	for (int i1 = 0; i1 < 20; i1++) {
-		AL[i1] = -50+rand()%100;
-		printf("%d  ", AL[i1]);
+
+	for (int j = 0; j < 20; j++) {
+		AL[j] = -50+rand()%100;
+		printf("%d  ", AL[j]);
 	}
 	printf("\n\nPositive elements: ");
-	for (int i1 = 0; i1 < 20; i1++) {
-		if(AL[i1]>0)
-		printf("%d  ", AL[i1]);
+	for (int j = 0; j < 20; j++) {
+		if(AL[j]>0)
+		printf("%d  ", AL[j]);
 	}
 
 	printf("\n\nNegative elements: ");
-	for (int i1 = 0; i1 < 20; i1++) {
-		if (AL[i1] < 0)
-			printf("%d  ", AL[i1]);
+	for (int j = 0; j < 20; j++) {
+		if (AL[j] < 0)
+			printf("%d  ", AL[j]);
+
 	}
 
 	//Задание Б
 	printf("\n\nTask B:\n\n");
 
 	printf("All elements:\n");
-	for (int i1 = 0; i1 < 10; i1++) {
-		for (int j = 0; j < 10; j++) {
+
+	for (int j = 0; j < 10; j++) {
+		for (int i = 0; i < 10; i++) {
+
 			B[i][j] = -50 + rand() % 100;
 			printf("%d ", B[i][j]);
 		}
